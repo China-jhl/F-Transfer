@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/file_icon_w_h"
+        android:background="@color/theme_blue"
+        android:gravity="center"
+        android:text="@string/info_dialog_title"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/info_title_size" />
+
+    <TextView
+        android:id="@+id/tv_file_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/file_desc_margin_left"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/info_size" 
+        android:layout_marginTop="@dimen/file_desc_margin_left"/>
+
+</LinearLayout>

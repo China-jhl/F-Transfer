@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cell_bg"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_footer" >
+
+    <ImageView
+        android:id="@+id/iv_footer_1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/item_footer"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:contentDescription="@string/hello_world"
+        android:src="@drawable/rename" />
+
+    <ImageView
+        android:id="@+id/iv_footer_2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/item_footer"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:contentDescription="@string/hello_world"
+        android:src="@drawable/copy" />
+
+    <ImageView
+        android:id="@+id/iv_footer_3"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/item_footer"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:contentDescription="@string/hello_world"
+        android:src="@drawable/delete" />
+
+    <ImageView
+        android:id="@+id/iv_footer_4"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/item_footer"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:contentDescription="@string/hello_world"
+        android:src="@drawable/info" />
+
+    <ImageView
+        android:id="@+id/iv_footer_5"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/item_footer"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:contentDescription="@string/hello_world"
+        android:src="@drawable/share" />
+
+</LinearLayout>

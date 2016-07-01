@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_blue"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp" >
+
+    <Button
+        android:id="@+id/bt_file_receive"
+        android:layout_width="@dimen/width_button"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_board3"
+        android:text="@string/receive_files" />
+
+    <Button
+        android:id="@+id/bt_file_send"
+        android:layout_width="@dimen/width_button"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_board3"
+        android:text="@string/send_files" />
+
+    <Button
+        android:id="@+id/test1"
+        android:layout_width="@dimen/width_button"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_board3"
+        android:text="@string/receive_files_history" />
+
+    <Button
+        android:id="@+id/test2"
+        android:layout_width="@dimen/width_button"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_board3"
+        android:text="@string/send_files_history" />
+
+</LinearLayout>

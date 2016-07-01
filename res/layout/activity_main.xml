@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_header_height"
+        layout="@layout/layout_header" />
+
+    <LinearLayout
+        android:id="@+id/ll_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tabs"
+        android:layout_below="@id/header"
+        android:background="@color/theme_blue"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_tab1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/tab1"
+            android:textColor="@color/index_point_color"
+            android:textSize="@dimen/info_title_size" />
+
+        <TextView
+            android:id="@+id/tv_tab2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/tab2"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/info_title_size" />
+
+        <TextView
+            android:id="@+id/tv_tab3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/tab3"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/info_title_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contain_point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_tabs"
+        android:background="@color/theme_blue"
+        android:orientation="horizontal" >
+
+        <com.rjb.dianfeng.fileexchange.view.IndexPoint
+            android:id="@+id/mark_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/no_pic"
+            android:src="@drawable/index_point" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/exchange_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/contain_point" >
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

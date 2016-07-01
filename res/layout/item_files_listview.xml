@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/iv_file_icon"
+        android:layout_width="@dimen/file_icon_w_h"
+        android:layout_height="@dimen/file_icon_w_h"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/file_icon_margin_left"
+        android:contentDescription="@string/hello_world"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/file_desc_margin_left"
+        android:layout_toRightOf="@id/iv_file_icon"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_file_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:textColor="#77000000"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="@dimen/arrow_w_h"
+        android:layout_height="@dimen/arrow_w_h"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/file_icon_margin_left"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/right"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_chose"
+        android:layout_width="@dimen/check_w_h"
+        android:layout_height="@dimen/check_w_h"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/file_icon_margin_left"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/unckecked"
+        android:visibility="gone" />
+
+</RelativeLayout>
